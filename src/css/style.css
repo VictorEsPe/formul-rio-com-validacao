@@ -1,0 +1,93 @@
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-container {
+  background-color: antiquewhite;
+  background-image: url('/src/images/bg-repeat.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat-x;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 60px;
+}
+
+.form-description h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.form-description p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.5rem;
+  width: 300px;
+}
+
+.form-card {
+  background-color: #fff;
+  padding: 20px;
+}
+
+#form .input-and-message-container {
+  display: flex;
+  margin-bottom: 6px;
+  flex-direction: column;
+}
+
+.input-and-message-container.error input,
+.input-and-message-container.error textarea {
+  border-color: #F52E2E;
+}
+
+.input-and-message-container.valid input,
+.input-and-message-container.valid textarea {
+  border-color: #00C22B;
+}
+
+.input-and-message-container .error-message {
+  font-weight: 400;
+  font-size: 10px;
+  color: #F52E2E;
+}
+
+.form-card .input,
+.form-card .text-area {
+  width: 300px;
+  padding: 9px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+.form-card .text-area {
+  height: 100px;
+}
+
+.required-fields {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 7px;
+}
+
+.submit-btn {
+  background-color: #3CCC87;
+  color: #fff;
+  width: 300px;
+  border-radius: 5px;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+
+  &:hover {
+    background-color: #33a56e;
+  }
+}

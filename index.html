@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+
+    <title>Formulário com validação</title>
+  </head>
+  <body>
+    <main>
+
+      <div class="form-container">
+        <div class="form-description">
+          <h1>Ficou com dúvida? <br>
+          Nos mande uma mensagem!</h1>
+  
+          <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </div>
+
+        <div class="form-card">
+          <form id="form">
+            <div class="input-and-message-container">
+              <input type="text" id="name-input" class="input" placeholder="Nome completo *">
+              <p class="error-message" id="name-error-message"></p>
+            </div>
+  
+            <div class="input-and-message-container">
+              <input type="text" id="email-input" class="input" placeholder="Email *">
+              <p class="error-message" id="email-error-message"></p>
+            </div>
+  
+            <div class="input-and-message-container">
+              <input type="number" id="telephone-input" class="input" placeholder="(DDD) Telefone *">
+              <p class="error-message" id="telephone-number-error-message"></p>
+            </div>
+  
+            <div class="input-and-message-container">
+              <textarea class="text-area" id="message-input" placeholder="Mensagem *"></textarea>
+              <p class="error-message" id="message-error-message"></p>
+            </div>
+  
+            <p class="required-fields">*campos obrigatórios</p>
+  
+            <button type="submit" class="submit-btn">Enviar</button>
+          </form>
+        </div>
+      </div> 
+    </main>
+
+    <script src="/src/js/script.js"></script>
+  </body>
+</html>

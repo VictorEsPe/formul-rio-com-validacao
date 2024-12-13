@@ -4,7 +4,6 @@ html {
 }
 
 .form-container {
-  background-color: antiquewhite;
   background-image: url('src/images/bg-repeat.jpg');
   background-position: center;
   background-size: contain;

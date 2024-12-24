@@ -1,0 +1,30 @@
+@media(max-width: 768px) {
+  .form-container {
+    flex-flow: column;
+    text-align: center;
+  }
+
+  .form-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-description h1 {
+    font-size: 2.5rem;
+  }
+
+  .form-description p {
+    width: 350px;
+  }
+
+  #form .input-and-message-container {
+    align-items: flex-start;
+  }
+}
+
+@media(max-width: 600px) {
+  .form-description h1 {
+    font-size: 2rem;
+  }
+}

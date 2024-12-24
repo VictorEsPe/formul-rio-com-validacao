@@ -14,9 +14,11 @@ form.addEventListener('submit', event => {
       createErrorMessage('Campo obrigatório', input)
       return
     } 
+
     if(input.id === 'email-input') {
       validateEmail(input)
     }
+    
     if(input.type === 'number') {
       validateTelephoneNumber(input)
     }
